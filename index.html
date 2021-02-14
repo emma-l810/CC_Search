@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CollegeSearch - Home</title>
+
+    <script defer src="myScript.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- external CSS style sheet -->
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <!-- container class for the body (w/ Bootstrap4) -->
+    <div id="myDiv" style="background-image: url(https://i.pinimg.com/originals/c1/90/01/c19001be3a43f63f0aebf634b63a7326.jpg)">
+      <div class="container-fluid center">
+        <!-- maybe import this whole thing from another html document - possible? -->
+        <h1>Welcome to CCSearch!</h1>
+        <h5 style="margin: 0px 300px 0px 300px">The purpose of CCSearch is to provide students with a site where they can easily access
+        information about test and grade policies for their interested schools. Below, you can select from a checklist for requirements
+        that you are looking for. You can select multiple or none (though I would advise you to choose at least one). When you're done,
+        hit the submit button to see what comes up!</h5>
+
+        <div class="row center">
+          <div class="col-xl-4 col-md-6">
+            <div class="buttons" style="margin:50px; background: #6ee1f5; color: #ffffff">
+              <input id="test_optional" name="test_optional" type="checkbox" />
+              <label for="test-optional">Test-optional</label>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-6">
+            <div class="buttons" style="margin:50px; background: #4851fa; color: #ffffff">
+              <input id="test_mandatory" name="test_mandatory" type="checkbox" />
+              <label for="test_mandatory">Test-mandatory</label>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-6">
+            <div class="buttons" style="margin:50px; background: #7f17ff; color: #ffffff">
+              <input id="blind_testing" name="blind_testing" type="checkbox" />
+              <label for="blind_testing">Blind-testing</label>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-6">
+            <div class="buttons" style="margin:10px 50px 10px 50px; background: #ae25f7; color: #ffffff">
+              <input id="class_2021" name="class_2021" type="checkbox" />
+              <label for="class_2021">Class of 2021</label>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-6">
+            <div class="buttons" style="margin:10px 50px 10px 50px; background: #e8bdff; color: #ffffff">
+              <input id="class_2022" name="class_2022" type="checkbox" />
+              <label for="class_2022">Class of 2022</label>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-6">
+            <div class="buttons" style="margin:10px 50px 10px 50px; background: #9ecdff; color: #ffffff">
+              <input id="class_2023" name="class_2023" type="checkbox" />
+              <label for="class_2023">Class of 2023</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="buttons center">
+          <button class="submitbutton" onclick='myClick()'>See colleges</button>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
